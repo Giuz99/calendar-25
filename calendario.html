@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calendario.css">
+    <title>25 Dicembre 2025</title>
+
+</head>
+
+<body>
+    <div style="display: flex; height: 100vh;margin:0">
+        <div class="backDoor">
+            <h3>
+                <a class="indizio" href="clue.html">SCOPRI L'INDIZIO</a>
+            </h3>
+            <div class="door">
+                <h2>25 DICEMBRE</h2>
+                <p style="text-align: center;">
+                    <img src="ghirlanda.svg" class="wreath" alt="ghirlanda">
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var element = document.querySelector(".door");
+    element.addEventListener("click", toggleDoor);
+
+    function toggleDoor() {
+        element.classList.toggle("doorOpen");
+    }
+</script>
+
+</html>

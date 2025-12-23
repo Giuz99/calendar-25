@@ -1,0 +1,94 @@
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+    max-height: 100vh;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-weight: 500;
+    display: block;
+}
+
+.bottone {
+    border-radius: 20px;
+    background-color:rgb(22, 133, 66);
+    padding: 12px 14px;
+    margin: 10px;
+    color: beige;
+    text-align: center;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+}
+
+a:hover {
+    color:rgb(113, 14, 14)
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    color: rgb(22, 133, 66);
+    font-size: 30px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    display: flex;
+
+    font-size: 35px;
+    text-align: center;
+}
+
+.indizio {
+    margin: auto;
+}
+
+.wreath {
+    width: 80%;
+}
+
+.backDoor {
+    background-color: #264a30;
+    color: beige;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    /*margin-top: 50px;*/
+
+    /*my code*/
+}
+
+.door {
+    background-color: rgb(113, 14, 14);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+
+    transform-origin: left;
+    /*Speed of the Door animation*/
+    transition: all 0.5s ease-in-out;
+
+    /*my code*/
+
+}
+
+.doorOpen {
+    /*prespectiv creates the door open effect*/
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-115deg);
+}
